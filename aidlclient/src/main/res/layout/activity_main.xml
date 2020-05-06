@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/bind_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bind Service"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <TextView
+        android:id="@+id/addition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:text=" Addition / Get Employee List"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/bind_service"
+        app:layout_constraintStart_toStartOf="@+id/bind_service"
+        app:layout_constraintTop_toBottomOf="@+id/bind_service" />
+
+    <TextView
+        android:id="@+id/employee_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="@+id/addition"
+        app:layout_constraintTop_toBottomOf="@+id/addition" />
+
+    <TextView
+        android:id="@+id/update_emp_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Update Employee List"
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/employee_list"
+        app:layout_constraintTop_toBottomOf="@+id/employee_list" />
+
+    <TextView
+        android:id="@+id/show_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="542dp"
+        android:layout_marginBottom="343dp"
+
+        android:textColor="@color/colorPrimary"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bind_service" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
